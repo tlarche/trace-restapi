@@ -15,38 +15,51 @@ const main = async () => {
         json: true,
         method: 'GET'
     })
-    // **.then( (response) => {
-    // **    return response.json();
-    // ** })
 
     // Get back POI list of specified USER
-    // ** console.log(response)
     const json = await response.json();
-    // ** console.log(json);
+
     if (json.result) {
-        pois = json.list
+
         console.log(`REST URL: ${url}`);
         console.log(`Get back ${json.count} items...`);
-        for (let p=0; p<json.count;p++) {
+        
+        // Explore POIs list 
+        pois = json.list
+        for (let p=0; p<json.count; p++) {
+
             console.log("name  = " + pois[p].name);
             console.log("long. = " + pois[p].dd_coord.longitude);
             console.log("lat.  = " + pois[p].dd_coord.latitude);
             console.log("");
+
         }
+        
+        // Return the list to promise
+        return pois;
 
     } else {
+
+        // result = false
         console.log(`An error occured on REST API...`, json);
-        return;
+
+        // Return the RESPONSE if 
+        return response;
+
     }
     // ============================= TEST REST API ===================================
 
 }
 
-// Call MAIN() function in synchronous mode
+// Call MAIN() function in synchronous/promise mode
 main()
-    .then(
-        (data) => {
-            console.log("End main() =>", data)
-        //console.log(">>>", user_id);
-        }
-    )
+    .then((data) => {
+        console.log("End OK =>", data.length)
+
+    })
+
+    .catch((err) => {
+        console.log("Unexpected Error :", err)
+    })
+        
+// END OF SCRIPT
