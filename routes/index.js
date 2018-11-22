@@ -30,9 +30,9 @@ dbMongoose.connect(dbURI, dbOptions, function (err) {
 });
 // __ dbMongoose ________________________________________
 
-// /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index', { title: 'TRACE REST API 0.1' });
-// });
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'TRACE REST API 0.1' });
+});
 
 module.exports = router;
