@@ -1,0 +1,335 @@
+{
+"user_uid": 127,
+"first_name": "Thierry",
+"last_name": "Larché",
+"email": "test@gmail.com",
+"country": "france",
+"language": "fr",
+"user_status": "active",
+"trip_count": 2,
+"trip_list": [
+    {
+        "trip_id": 1234,
+        "trip_sequence": 2,
+        "status": "planned",
+        "title": "Toulon - Vladivostok A/R (45000 KM)",
+        "description": "Le plus beau des voyages...",
+        "expected_distance": 45000,
+        "real_distance": 42400,
+        "start_date": "05-01-2017",
+        "end_date": "08-28-2018",
+        "main_means_of_transport": "motorbike",
+        "visited_country_list": ["France", "Allemange", "Pologne", "Biélorussie", "Lettonie", "Russie", "Mongolie", "Géorgie", "Turquie", "Grèce", "Italie"],
+        "step_count": 120,
+        "step_list": [
+        {
+            "step_sequence": 1,
+            "step_date": "04-30-2017",
+            "starting_time": "08:30",
+            "expected_distance": 810,
+            "expected_duration": "08:40",
+            "from_dd_coord": {
+                "latitude": 43.0725509,
+                "longitude": 5.8548316
+            },
+            "to_dd_coord": {
+                "latitude": 50.926881,
+                "longitude": 5.702218
+            },
+            "title": "TOULON - HATTONCHATEL",
+            "description": "Etape de liaison pour rejoindre les raiders",
+            "instruction": "...",
+            "way_point_count": 3,
+            "way_point_list": [
+                {
+                    "wp_sequence": 1,
+                    "timing": "00:00",
+                    "type": "S",
+                    "name": "Home, sweet home!", 
+                    "description": "C'est chez moi !",
+                    "instruction": "Le point départ de cette grande aventure...",
+                    "kind": "home", 
+                    "dd_coord": {
+                        "latitude": 43.0725509,
+                        "longitude": 5.8548316,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 2,
+                    "timing": "04:15",
+                    "type": "I",
+                    "name": "Arrêt à Lyon",
+                    "description": "Au revoir à la famille",
+                    "instruction": "Restaurant",
+                    "kind": "restaurant",
+                    "dd_coord": {
+                        "latitude": 45.764043,
+                        "longitude": 4.8356590,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 3,
+                    "timing": "03:50",
+                    "type": "E",
+                    "name": "Chateau de Hattonchâtel",
+                    "description": "Le chateau mérite bien le détour...",
+                    "kind": "hotel",
+                    "dd_coord": {
+                        "latitude": 50.926881,
+                        "longitude": 5.702218,
+                        "address": "NOT_DEFINED"
+
+                    }
+                }]
+        },        
+        {
+            "step_sequence": 2,
+            "step_date": "02-05-2017",
+            "starting_time": "08:30",
+            "expected_distance": 589,
+            "expected_duration": "06:20",
+            "from_dd_coord": {
+                "latitude": 50.926881,
+                "longitude": 5.702218
+            },
+            "to_dd_coord": {
+                "latitude": 50.926881,
+                "longitude": 11.584907
+            },
+            "title": "HATTONCHATEL (F) - JENA (D)",
+            "description": "Etape de liaison jusquà Iéna",
+            "instruction":"...",
+            "way_point_count": 3,
+            "way_point_list": [
+                {
+                    "wp_sequence": 1,
+                    "timing": "00:00",
+                    "type": "S",
+                    "name": "Chateau de Hattonchâtel",
+                    "description": "Le chateau mérite bien le détour...",
+                    "kind": "hotel",
+                    "dd_coord": {
+                        "latitude": 50.926881,
+                        "longitude": 5.702218,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 2,
+                    "timing": "00:30",
+                    "type": "I",
+                    "name": "L'arrêt du traineau impérial avec Caulincourt, à Harville", 
+                    "description": "Napoléon s’arrêta à HARVILLE dans la nuit du 17 au 18 décembre 1812.\nHARVILLE est située sur l’ ancienne Voie Romaine reliant VERDUN à METZ.",
+                    "kind": "historical", 
+                    "dd_coord": {
+                        "latitude": 49.098333,
+                        "longitude": 5.728056,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 3,
+                    "timing": "04:30",
+                    "type": "E",
+                    "name": "Hotel IBIS (Jena)",
+                    "description": "L'hotel IBIS de Iéna possède un parking souterrain gratuit",
+                    "kind": "hotel",
+                    "dd_coord": {
+                        "latitude": 50.926881,
+                        "longitude": 11.584907,
+                        "address": "NOT_DEFINED"
+                    }
+                }
+            ]
+        },
+        {
+            "step_sequence": 3,
+            "step_date": "03-05-2017",
+            "starting_time": "08:30",
+            "expected_distance": 544,
+            "expected_duration": "06:28",
+            "expected_arrival_time": "17:30", 
+            "from_dd_coord": {
+                "latitude": 50.926881,
+                "longitude": 11.584907
+            },
+            "to_dd_coord": {
+                "latitude": 52.141667,
+                "longitude": 16.893611
+            },
+            "title": "JENA (D) - RIPPACH - Völkerschlachtdenkmal - BRODNICA (P)",
+            "description": "Champ de batailles Iéna, ...",
+            "instruction": "...",
+            "way_point_count": 6,
+            "way_point_list": [
+                {
+                    "wp_sequence": 1,
+                    "timing": "00:00",
+                    "type": "E",
+                    "name": "Hotel IBIS (Jena)",
+                    "description": "L'hotel IBIS de Iéna possède un parking souterrain gratuit",
+                    "kind": "hotel",
+                    "dd_coord": {
+                        "latitude": 50.926881,
+                        "longitude": 11.584907,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 2,
+                    "timing": "00:15",
+                    "type": "I",
+                    "name": "Route #7 (Jena, D)",
+                    "description": "n/a",
+                    "instruction": "A la sortie de Jena, prendre la route #7, et prendre la Jenaer Str. en direction de COSPEDA",
+                    "kind": "way_point",
+                    "dd_coord": {
+                        "latitude": 50.941148,
+                        "longitude": 11.546203,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 3,
+                    "timing": "00:45",
+                    "type": "V",
+                    "name": "Champ de bataille de Iéna (1806)",
+                    "description": "Napoléon 1er remporta à Iéna, en 1806, une belle bataille sur les Prussiens...",
+                    "kind": "historical",
+                    "dd_coord": {
+                        "latitude": 50.945,
+                        "longitude": 11.571389,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 4,
+                    "timing": "01:45",
+                    "type": "V",
+                    "name": "Monument commémoratif de la mort du Maréchal Bessière, à Ripparch",
+                    "description": "Le maréchal fut emporté par un boulet, la veille de la bataille de Lutzen, en mai 1813, lors de la campagne de Saxe...",
+                    "kind": "historical",
+                    "dd_coord": {
+                        "latitude": 51.226667,
+                        "longitude": 12.068889,
+                        "address": "NOT_DEFINED"
+                    }
+                },
+                {
+                    "wp_sequence": 5,
+                    "timing": "03:00",
+                    "type": "V",
+                    "name": "Monument de la Bataille des Nations à Liepzig",
+                    "description": "Völkerschlachtdenkmal",
+                    "instruction":"Visite de 1h30",
+                    "kind": "historical",
+                    "dd_coord": {
+                        "latitude": 51.3125,
+                        "longitude": 12.4136111,
+                        "address": "Str. des 18. Oktober 100, 04299 Leipzig, Allemagne"
+                    }
+                },
+                {
+                    "wp_sequence": 6,
+                    "timing": "03:00",
+                    "type": "E",
+                    "name": "PALAC MANKOWSKICH, à Brodnica (P)",
+                    "description": "Château de ",
+                    "kind": "tourism",
+                    "dd_coord": {
+                        "latitude": 52.141667,
+                        "longitude": 16.893611,
+                        "address": "Brodnica 38, 63-112 Brodnica, Pologne"
+                    }
+                }
+            ]
+        }, 
+        {
+            "step_sequence": 63,
+            "step_date": "02-07-2017",
+            "starting_time": "08:30",
+            "expected_distance": 763,
+            "expected_duration": "09:00",
+            "expected_arrival_time": "18:30",
+            "from_dd_coord": {
+                "latitude": 48.476489,
+                "longitude": 135.058137
+            },
+            "to_dd_coord": {
+                "latitude": 43.116542,
+                "longitude": 131.876993
+            },
+            "title": "KHABAROVSK - Ussuriysk - VLADIVOSTOK (Владивосток)",
+            "description": "L'exploration du Primorié : Sur les traces de V. Arseniev et de Dersou Ouzala.",
+            "instruction": "...",
+            "way_point_count": 3,
+            "way_point_list": [
+                {
+                    "wp_sequence": 1,
+                    "timing": "00:00",
+                    "type": "S",
+                    "name": "Khabarovsk Siti Butik-Otel / Хабаровск Сити бутик-отель",
+                    "description": "Hôtel de charme avec un très bon restaurant. Petit-déjeuner copieux.",
+                    "kind": "hotel",
+                    "dd_coord": {
+                        "latitude": 48.476489,
+                        "longitude": 135.058137,
+                        "address": "Ulitsa Istomina, 64, Khabarovsk, Khabarovskiy kray, Russie, 680000"
+                    }
+                },
+                {
+                   "wp_sequence": 2,
+                   "timing": "00:45",
+                   "type": "I",
+                   "name": "La tombe de Dersou Ouzala",
+                   "description": "Dersou Ouzala fut un guide Gold de Vladimir Arseniev, géographe et explorateur du Primorié.",
+                   "kind": "historical",
+                   "dd_coord": {
+                       "latitude": 48.220833,
+                       "longitude": 135.0647222,
+                       "address": "ул. Промышленная, 5, р.п. Корфовский, Khabarovskiy kray, Russie, 680504"
+                   }
+               },
+               {
+                   "wp_sequence": 3,
+                   "timing": "09:00",
+                   "type": "E",
+                   "name": "Azimut Hotel",
+                   "description": "Hôtel moderne avec une vue imprenable sur la baie Amurskiy Zaliv.",
+                   "kind": "hotel",
+                   "dd_coord": {
+                       "latitude": 43.116542,
+                       "longitude": 131.876993,
+                       "address": "Naberezhnaya Ulitsa, 10, Vladivostok, Primorskiy kray, Russie, 690003"
+                   }
+               }
+           ]
+        }
+	],
+	"created_date": "12-12-2017",
+	"updated_date": "02-13-2018",
+	"version" : 5
+    },
+    {
+        "trip_id": 1256,
+        "trip_sequence": 1,
+        "status": "achieved",
+        "title": "SUR LES ROUTES DE SCANDINAVIE A/R (10000 KM)",
+        "description": "Sur les traces de Peer Gynt",
+        "expected_distance": 10000,
+        "real_distance": 9640,
+        "start_date": "05-02-2014",
+        "end_date": "05-25-2014",
+        "main_means_of_transport": "motorbike",
+        "step_count": 22,
+        "step_list": [""]
+    }
+    ],
+"created_date": "12-31-2017",
+"updated_date": "11-11-2018",
+"version": 1
+
+}
+	
