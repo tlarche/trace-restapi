@@ -1,4 +1,3 @@
-// var request = require('request')
 const express = require('express')
 const mongoose = require('mongoose')
 const router = express.Router()
@@ -29,8 +28,10 @@ ROUTE API REST
 router.post('/create', function ( req, res, next) {
   console.log('ROUTE: user/create', req.body)
 
-  // Check if USER exist?
-  UserModel.findOne({ email: req.body.email }, function ( err, user) {
+  // Check if USER exists?
+  UserModel.findOne({ email: req.body.email }, function ( err, user ) {
+    console.log('error:', err)
+
     if ( user ) {
       // this USER exists, can't create
       console.log(`>>> user already exists (email: ${req.body.email}) <<<`)
@@ -39,9 +40,7 @@ router.post('/create', function ( req, res, next) {
         '_id': user._id,
         'result': false
       })
-
     } else {
-
       // This user doesn't exist...
       const createdDate = new Date()
       const newUser = new UserModel({
@@ -67,7 +66,7 @@ router.post('/create', function ( req, res, next) {
         }
       }) // end save
     } // end else
-  }) // end findOne 
+  }) // end findOne
 
 // END ROUTE => CREATE-USER
 })
@@ -91,6 +90,7 @@ router.get('/read', function (req, res, next) {
       })
     }
   })
+// END ROUTE => CREATE-USER
 })
 
 // GETS A SINGLE USER FROM THE DATABASE

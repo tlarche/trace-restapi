@@ -132,7 +132,7 @@ router.get('/read-by-id', function (req, res, next) {
 
 /* GET=READ */
 router.get('/read-by-userid', function (req, res, next) {
-    console.log("ROUTE: poi/read-by-user-id", req.query);
+    console.log("ROUTE: poi/read-by-userid", req.query);
     poiModel.find({
         user_id: req.query.user_id
         }, function (err, pois) {
