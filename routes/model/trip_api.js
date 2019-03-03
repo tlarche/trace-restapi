@@ -3,6 +3,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const router = express.Router();
 
+/// $$$ TLA
 // __ TRIP SCHEMA ________________________________________
 const ObjectId = mongoose.Schema.Types.ObjectId;
 const tripSchema = mongoose.Schema({
